@@ -21,7 +21,7 @@ const App = () => {
   }, [])
 
   return (
-      <div>
+      <div className='w-full h-full text-white bg'>
         <Header />
         <CharacterGrid isLoading={isLoading} items={items}/>
       </div>
