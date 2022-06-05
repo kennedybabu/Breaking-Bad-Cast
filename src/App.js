@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import Header from './components/UI/Header';
 import axios from 'axios';
+import CharacterGrid from './components/characters/CharacterGrid';
 
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
 
   return (
       <div>
-        
+        <Header />
+        <CharacterGrid isLoading={isLoading} items={items}/>
       </div>
   )
 }
